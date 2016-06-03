@@ -37,6 +37,9 @@ def all_hands_on_deck():
     
     for issue in issues:
         user = choice(users)
+        # we definitely don't want to keep this issue
+        while user.name == username:
+            user = choice(users)
         print 'assigning {} to {}'.format(issue.key, user.key)
         if mode == '1':
             jira.assign_issue(issue, user.key)
