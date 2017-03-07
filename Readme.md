@@ -10,7 +10,7 @@ This handy script will help you get both of your hands on a deck.
 
 ## How does `all-hands-on-deck.py` work?
 
-This job saving tool will go through every Jira ticket assigned to you and reassign it to a random person in your organization. Sucks for them but awesome for your, right?
+This job saving tool will go through every Jira ticket assigned to you and reassign it to a random person in your organization. Sucks for them but awesome for you, right?
 
 ### Installation
 ```
