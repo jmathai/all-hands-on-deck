@@ -26,7 +26,7 @@ def get_users():
     return users
 
 def get_my_issues():
-    issues = jira.search_issues('issuetype in (standardIssueTypes(), subTaskIssueTypes(), Story) AND status in (Open, "In Dev", "To Do", "In QA", "In Progress", "QA Verify", Idea, "In UX") AND assignee = currentUser()', maxResults=False)
+    issues = jira.search_issues('issuetype in (standardIssueTypes(), subTaskIssueTypes(), Story) AND status in (Open, "In Dev", "To Do", "In QA", "In Progress", "QA Verify", Idea, "In UX") AND assignee = currentUser() and project = {}'.format(project), maxResults=False)
     return issues
 
 def all_hands_on_deck():
